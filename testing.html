@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <style>
+            .ellipsis {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 4;
+                text-overflow: ellipsis;
+            }
+        
+            .expand {
+                display: block;
+                cursor: pointer;
+                height: auto !important;
+            }
+        </style>
+        
+        <div class="ellipsis expand" onclick="$(this).toggleClass('ellipsis expand')">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ex a tellus volutpat tristique. Sed eu lorem eu mi maximus ornare at et dolor. Sed ac mauris vel nibh bibendum porttitor. Donec venenatis euismod dui, eu consectetur sapien congue nec. Maecenas convallis eget eros id finibus. Fusce rutrum, velit a rhoncus bibendum, augue orci egestas diam, ac rhoncus orci mi vel urna. Quisque euismod efficitur elit, non malesuada leo gravida at.</div>
+        
+    </body>
+</html>
